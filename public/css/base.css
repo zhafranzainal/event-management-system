@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eee;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.base-container {
+    border-radius: 15px;
+    background: #ffffff;
+    padding: 20px;
+    margin-left: 4%;
+    margin-top: 5%;
+    width: 92vw;
+    height: auto;
+}
+
+th {
+    text-align: center;
+}
+
+.table-row {
+    cursor: pointer;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.row-center {
+    text-align: center;
+}
+
+/* ----------------------------- COLOR ----------------------------- */
+
+.bg-blue-dell {
+    background-color: #0076ce;
+}
+
+.blue-dell {
+    color: #0076ce;
+}
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+.dataTables_scroll {
+    overflow: auto;
+}
+
+/* --------------------- OVERRIDE BOOTSTRAP-SELECT STYLE -------------------- */
+
+.btn-light {
+    /* border: 1px solid #ced4da; */
+    background-color: #fff;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
